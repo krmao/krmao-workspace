@@ -40,7 +40,7 @@
 		9D2A2C764DD171F2720C7161 /* libPods-mobile-smart-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-smart-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5807A84E32295686E2F5CE4 /* Pods-mobile-smart-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-smart-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-smart-ios/Pods-mobile-smart-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		D4621453025F2B1E3FCD7884 /* Pods-mobile-smart-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-smart-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-smart-ios/Pods-mobile-smart-ios.release.xcconfig"; sourceTree = "<group>"; };
-		F830C32D226604F200191FBE /* liblibrary-base-resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "liblibrary-base-resource.bundle"; path = "../../repo/Debug/liblibrary-base-resource.bundle"; sourceTree = "<group>"; };
+		F830C32D226604F200191FBE /* liblibrary-base-resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "liblibrary-base-resource.bundle"; sourceTree = "<group>"; };
 		F87D265D22658A03009D468E /* mobile-smart-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-smart-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87D266022658A03009D468E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F87D266122658A03009D468E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 		6194A4B4CBE4B5DD95ED7D62 /* libraries */ = {
 			isa = PBXGroup;
 			children = (
-				F830C32D226604F200191FBE /* liblibrary-base-resource.bundle */,
 				6194A21FDFE51653A80592A5 /* library-base.xcodeproj */,
 				6194AF6FE99BF902E9F6EC73 /* library-base-smart */,
 				6194A92B7F75649921A5E9D7 /* library-repository-smart */,
@@ -115,6 +114,14 @@
 			path = "module-main";
 			sourceTree = "<group>";
 		};
+		6194AD8A5883FE8937546E07 /* bundles */ = {
+			isa = PBXGroup;
+			children = (
+				F830C32D226604F200191FBE /* liblibrary-base-resource.bundle */,
+			);
+			path = bundles;
+			sourceTree = "<group>";
+		};
 		6194AF6FE99BF902E9F6EC73 /* library-base-smart */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +141,8 @@
 		F83E9DB42265C38F00AD47CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F83E9DBB2265C38F00AD47CC /* library-base-resource.bundle */,
 				F83E9DB92265C38F00AD47CC /* liblibrary-base.a */,
+				F83E9DBB2265C38F00AD47CC /* liblibrary-base-resource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 				D90B7C907A4791605C57DBA9 /* Frameworks */,
 				6194A1BDCF6F6D69AF2E645E /* modules */,
 				6194A4B4CBE4B5DD95ED7D62 /* libraries */,
+				6194AD8A5883FE8937546E07 /* bundles */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,10 +249,10 @@
 			remoteRef = F83E9DB82265C38F00AD47CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F83E9DBB2265C38F00AD47CC /* library-base-resource.bundle */ = {
+		F83E9DBB2265C38F00AD47CC /* liblibrary-base-resource.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "library-base-resource.bundle";
+			path = "liblibrary-base-resource.bundle";
 			remoteRef = F83E9DBA2265C38F00AD47CC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -367,6 +375,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -429,6 +438,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
