@@ -23,21 +23,32 @@
 		6194AE13ECAC446777E3F7B5 /* routeMap_annotation_shootPlace_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194AD2C385D73A7F3FE6162 /* routeMap_annotation_shootPlace_normal@3x.png */; };
 		6194AE2ABA0CE000C0AF519A /* routeMap_btn_shootPlace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194A6055ABE757A9495B934 /* routeMap_btn_shootPlace@3x.png */; };
 		6194AED654C0BF2D140023B9 /* routeMap_annotation_end@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6194AE8D304AA4CC550A2761 /* routeMap_annotation_end@3x.png */; };
-		F830C3232265C50700191FBE /* STBaseUIViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6194AA746EC229391B367EC5 /* STBaseUIViewController.h */; };
+		F830C3232265C50700191FBE /* STBaseUIViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 6194AA746EC229391B367EC5 /* STBaseUIViewController.h */; };
 		F87D269F2265B633009D468E /* library_base.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D269E2265B633009D468E /* library_base.m */; };
-		F87D26A02265B633009D468E /* library_base.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F87D269D2265B633009D468E /* library_base.h */; };
+		F87D26A02265B633009D468E /* library_base.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F87D269D2265B633009D468E /* library_base.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F830C32B226600A900191FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87D26922265B633009D468E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87D26C72265B842009D468E;
+			remoteInfo = "library-base-resource";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		F87D26982265B633009D468E /* CopyFiles */ = {
+		F87D26982265B633009D468E /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = "lib$(PRODUCT_NAME)-headers";
 			dstSubfolderSpec = 16;
 			files = (
-				F830C3232265C50700191FBE /* STBaseUIViewController.h in CopyFiles */,
-				F87D26A02265B633009D468E /* library_base.h in CopyFiles */,
+				F830C3232265C50700191FBE /* STBaseUIViewController.h in Copy Files */,
+				F87D26A02265B633009D468E /* library_base.h in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -63,7 +74,7 @@
 		F87D269A2265B633009D468E /* liblibrary-base.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibrary-base.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87D269D2265B633009D468E /* library_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = library_base.h; sourceTree = "<group>"; };
 		F87D269E2265B633009D468E /* library_base.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = library_base.m; sourceTree = "<group>"; };
-		F87D26C82265B842009D468E /* library-base-resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "library-base-resource.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87D26C82265B842009D468E /* liblibrary-base-resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "liblibrary-base-resource.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87D26CA2265B842009D468E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F87D269A2265B633009D468E /* liblibrary-base.a */,
-				F87D26C82265B842009D468E /* library-base-resource.bundle */,
+				F87D26C82265B842009D468E /* liblibrary-base-resource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,11 +173,12 @@
 			buildPhases = (
 				F87D26962265B633009D468E /* Sources */,
 				F87D26972265B633009D468E /* Frameworks */,
-				F87D26982265B633009D468E /* CopyFiles */,
+				F87D26982265B633009D468E /* Copy Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F830C32C226600A900191FBE /* PBXTargetDependency */,
 			);
 			name = "library-base";
 			productName = "library-base";
@@ -187,7 +199,7 @@
 			);
 			name = "library-base-resource";
 			productName = "library-base-resource";
-			productReference = F87D26C82265B842009D468E /* library-base-resource.bundle */;
+			productReference = F87D26C82265B842009D468E /* liblibrary-base-resource.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -269,6 +281,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F830C32C226600A900191FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87D26C72265B842009D468E /* library-base-resource */;
+			targetProxy = F830C32B226600A900191FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		F87D26A12265B633009D468E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -303,6 +323,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(SRC_ROOT)../../../repo/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -362,6 +383,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(SRC_ROOT)../../../repo/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -414,7 +436,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smart.library-base-resource";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "lib$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -431,7 +453,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smart.library-base-resource";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "lib$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;

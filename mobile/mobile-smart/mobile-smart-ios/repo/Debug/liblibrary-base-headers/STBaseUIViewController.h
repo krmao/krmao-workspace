@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "library_base.h"
 
-@interface MainViewController : STBaseUIViewController
+@interface STBaseUIViewController : UIViewController
 @end
