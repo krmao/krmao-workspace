@@ -1,0 +1,23 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "9.0"
+inhibit_all_warnings!
+
+def pod_third
+  pod 'AFNetworking', '3.2.1'
+  pod 'SSZipArchive', '2.1.4' # iOS 8+ https://github.com/ZipArchive/ZipArchive
+  pod 'Bugly'
+    # pod 'MLeaksFinder' 内存泄漏监控
+end
+
+def pod_umeng
+  pod 'UMCCommon', '2.0.0'
+  pod 'UMCSecurityPlugins', '1.0.6'
+  pod 'UMCShare/Social/ReducedWeChat'
+  pod 'UMCShare/Social/ReducedQQ'
+  pod 'UMCShare/Social/ReducedSina'
+end
+
+target 'mobile-smart-ios' do
+  pod_umeng
+  pod_third
+end
