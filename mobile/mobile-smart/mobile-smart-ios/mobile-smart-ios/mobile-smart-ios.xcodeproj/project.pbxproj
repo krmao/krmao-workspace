@@ -10,14 +10,32 @@
 		6194A4F97D840589801B6224 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6194A545FB32CB38F8367BDA /* MainViewController.m */; };
 		E62CB90832C39E72ED96FB50 /* libPods-mobile-smart-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2A2C764DD171F2720C7161 /* libPods-mobile-smart-ios.a */; };
 		F87D266222658A03009D468E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D266122658A03009D468E /* AppDelegate.m */; };
-		F87D266522658A03009D468E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D266422658A03009D468E /* ViewController.m */; };
 		F87D266A22658A04009D468E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87D266922658A04009D468E /* Assets.xcassets */; };
 		F87D266D22658A04009D468E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87D266B22658A04009D468E /* LaunchScreen.storyboard */; };
 		F87D267022658A05009D468E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F87D266F22658A05009D468E /* main.m */; };
+		F87D26D12265C114009D468E /* liblibrary-base.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F87D26D02265C114009D468E /* liblibrary-base.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F83E9DB82265C38F00AD47CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6194A21FDFE51653A80592A5 /* library-base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F87D269A2265B633009D468E;
+			remoteInfo = "library-base";
+		};
+		F83E9DBA2265C38F00AD47CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6194A21FDFE51653A80592A5 /* library-base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F87D26C82265B842009D468E;
+			remoteInfo = "library-base-resource";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6194A0028EC2BA28646EC5D8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6194A21FDFE51653A80592A5 /* library-base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "library-base.xcodeproj"; path = "library-base/library-base.xcodeproj"; sourceTree = "<group>"; };
 		6194A545FB32CB38F8367BDA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9D2A2C764DD171F2720C7161 /* libPods-mobile-smart-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-smart-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5807A84E32295686E2F5CE4 /* Pods-mobile-smart-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-smart-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-smart-ios/Pods-mobile-smart-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -25,12 +43,11 @@
 		F87D265D22658A03009D468E /* mobile-smart-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-smart-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87D266022658A03009D468E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F87D266122658A03009D468E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F87D266322658A03009D468E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F87D266422658A03009D468E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F87D266922658A04009D468E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F87D266C22658A04009D468E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F87D266E22658A05009D468E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87D266F22658A05009D468E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F87D26D02265C114009D468E /* liblibrary-base.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblibrary-base.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87D26D12265C114009D468E /* liblibrary-base.a in Frameworks */,
 				E62CB90832C39E72ED96FB50 /* libPods-mobile-smart-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,18 +91,11 @@
 		6194A4B4CBE4B5DD95ED7D62 /* libraries */ = {
 			isa = PBXGroup;
 			children = (
-				6194A52E4F2BA8A1503A6EB8 /* library-base */,
+				6194A21FDFE51653A80592A5 /* library-base.xcodeproj */,
 				6194AF6FE99BF902E9F6EC73 /* library-base-smart */,
 				6194A92B7F75649921A5E9D7 /* library-repository-smart */,
 			);
 			path = libraries;
-			sourceTree = "<group>";
-		};
-		6194A52E4F2BA8A1503A6EB8 /* library-base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "library-base";
 			sourceTree = "<group>";
 		};
 		6194A92B7F75649921A5E9D7 /* library-repository-smart */ = {
@@ -113,9 +124,19 @@
 		D90B7C907A4791605C57DBA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F87D26D02265C114009D468E /* liblibrary-base.a */,
 				9D2A2C764DD171F2720C7161 /* libPods-mobile-smart-ios.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F83E9DB42265C38F00AD47CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F83E9DB92265C38F00AD47CC /* liblibrary-base.a */,
+				F83E9DBB2265C38F00AD47CC /* library-base-resource.bundle */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F87D265422658A03009D468E = {
@@ -143,8 +164,6 @@
 			children = (
 				F87D266022658A03009D468E /* AppDelegate.h */,
 				F87D266122658A03009D468E /* AppDelegate.m */,
-				F87D266322658A03009D468E /* ViewController.h */,
-				F87D266422658A03009D468E /* ViewController.m */,
 				F87D266922658A04009D468E /* Assets.xcassets */,
 				F87D266B22658A04009D468E /* LaunchScreen.storyboard */,
 				F87D266E22658A05009D468E /* Info.plist */,
@@ -199,12 +218,35 @@
 			mainGroup = F87D265422658A03009D468E;
 			productRefGroup = F87D265E22658A03009D468E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F83E9DB42265C38F00AD47CC /* Products */;
+					ProjectRef = 6194A21FDFE51653A80592A5 /* library-base.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F87D265C22658A03009D468E /* mobile-smart-ios */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F83E9DB92265C38F00AD47CC /* liblibrary-base.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "liblibrary-base.a";
+			remoteRef = F83E9DB82265C38F00AD47CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F83E9DBB2265C38F00AD47CC /* library-base-resource.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "library-base-resource.bundle";
+			remoteRef = F83E9DBA2265C38F00AD47CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F87D265B22658A03009D468E /* Resources */ = {
@@ -248,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87D266522658A03009D468E /* ViewController.m in Sources */,
 				F87D267022658A05009D468E /* main.m in Sources */,
 				F87D266222658A03009D468E /* AppDelegate.m in Sources */,
 				6194A4F97D840589801B6224 /* MainViewController.m in Sources */,
@@ -395,6 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smart.mobile-smart-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../libraries/library-base\"/**";
 			};
 			name = Debug;
 		};
@@ -412,6 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smart.mobile-smart-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../libraries/library-base\"/**";
 			};
 			name = Release;
 		};
