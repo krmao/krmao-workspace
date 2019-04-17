@@ -31,7 +31,7 @@
 			remoteGlobalIDString = F87D26C82265B842009D468E;
 			remoteInfo = "library-base-resource";
 		};
-		F85FCC0B2266252400836118 /* PBXContainerItemProxy */ = {
+		F85FCC112267114E00836118 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F85FCC002266239900836118 /* library-base.xcodeproj */;
 			proxyType = 1;
@@ -187,7 +187,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F85FCC0C2266252400836118 /* PBXTargetDependency */,
+				F85FCC122267114E00836118 /* PBXTargetDependency */,
 			);
 			name = "mobile-smart-ios";
 			productName = "mobile-smart-ios";
@@ -301,10 +301,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F85FCC0C2266252400836118 /* PBXTargetDependency */ = {
+		F85FCC122267114E00836118 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "library-base";
-			targetProxy = F85FCC0B2266252400836118 /* PBXContainerItemProxy */;
+			targetProxy = F85FCC112267114E00836118 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

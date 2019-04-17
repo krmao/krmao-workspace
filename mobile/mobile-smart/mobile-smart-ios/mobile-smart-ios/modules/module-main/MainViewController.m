@@ -5,15 +5,25 @@
 
 #import "MainViewController.h"
 
+@interface MainViewController ()
+
+@property(nonatomic, strong) UIImageView *imageView;
+
+@end
+
 @implementation MainViewController {
-
-
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.view.backgroundColor = UIColor.blueColor;
+
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 400)];
+    self.imageView.image = [UIImage imageNamed:@"liblibrary-base-resource.bundle/routeMap_annotation_start.png"];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.imageView.backgroundColor = UIColor.redColor;
+
+    [self.view addSubview:self.imageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
