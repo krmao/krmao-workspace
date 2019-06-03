@@ -1,2 +1,0 @@
-# krmao-workspace
-react native

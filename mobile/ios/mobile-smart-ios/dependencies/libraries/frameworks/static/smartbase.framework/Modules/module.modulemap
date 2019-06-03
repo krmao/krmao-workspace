@@ -1,0 +1,6 @@
+framework module smartbase {
+  umbrella header "smartbase.h"
+
+  export *
+  module * { export * }
+}
